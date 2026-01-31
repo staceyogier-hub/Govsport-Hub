@@ -1,0 +1,14 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "mobile-core": ["../../packages/mobile-core/src"],
+      "edge-protocol": ["../../packages/edge-protocol/src"],
+      "data-store": ["../../packages/data-store/src"]
+    }
+  },
+  "include": ["src", "index.js", "app.config.js"]
+}
