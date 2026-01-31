@@ -1,0 +1,14 @@
+{
+  "name": "govsport-hub",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "install:all": "pnpm install",
+    "dev": "pnpm --filter hub dev",
+    "ios": "pnpm --filter hub ios",
+    "android": "pnpm --filter hub android",
+    "lint": "pnpm --filter hub lint && pnpm --filter \"./packages/**\" lint",
+    "typecheck": "pnpm --filter hub typecheck && pnpm --filter \"./packages/**\" typecheck",
+    "test": "pnpm --filter hub test && pnpm --filter \"./packages/**\" test"
+  }
+}
